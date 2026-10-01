@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 8k</title>
+</head>
+<body>
+
+<script>
+  const score = {
+    wins: 0,
+    losses: 0
+  };
+
+  localStorage.setItem('score', JSON.stringify(score));
+
+  const savedScore = localStorage.getItem('score');
+
+  if (savedScore) {
+    const loadedScore = JSON.parse(savedScore);
+    console.log(loadedScore);
+  }
+</script>
+
+</body>
+</html>

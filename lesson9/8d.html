@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 8d</title>
+</head>
+<body>
+<script>
+  function comparePrice(product1, product2) {
+    if (product1.price < product2.price) {
+      return product1;
+    } else {
+      return product2;
+    }
+  }
+
+  const product1 = {
+    name: 'basketball',
+    price: 2095
+  };
+
+  const product2 = {
+    name: 'football',
+    price: 1595
+  };
+
+  const cheaperProduct = comparePrice(product1, product2);
+
+  console.log(cheaperProduct);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 8i</title>
+</head>
+<body>
+
+<button class="js-heads-button">heads</button>
+<button class="js-tails-button">tails</button>
+
+<script>
+  function playGame(guess) {
+    const result = Math.random() < 0.5 ? 'heads' : 'tails';
+
+    if (guess === result) {
+      console.log('You win!');
+    } else {
+      console.log('You lose!');
+    }
+  }
+
+  document.querySelector('.js-heads-button')
+    .addEventListener('click', function () {
+      playGame('heads');
+    });
+
+  document.querySelector('.js-tails-button')
+    .addEventListener('click', function () {
+      playGame('tails');
+    });
+</script>
+
+</body>
+</html>
